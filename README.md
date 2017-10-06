@@ -1,5 +1,5 @@
 ![Image of Startpage](https://blazstyn.github.io/bling-start/back/preview.png)
-## SIM Post start
+## Sim Post start
 This page serves as a launcher for Sim Posts's internal services, loaded by the web browser whenever technicians need to access it. The start-page includes links to client services, Sim services, and useful tools that are accessed frequently during shift work or configuration.
 
 Based on the original concept by [jnsltk](https://github.com/jnsltk/startpages): 'toosimple'.
