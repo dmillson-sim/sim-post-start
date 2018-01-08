@@ -11,7 +11,7 @@
 	<link rel="stylesheet" href="css/font-awesome.min.css">
     	<link rel="stylesheet" href="css/icomoon.css">
 	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-	
+
 <style>
 	html, body {
 		width: 100%;
@@ -32,6 +32,115 @@
     		background-attachment: fixed;
 		background-size: cover; */ /* To display wallpaper at full screen size */
 	}
+
+	#alert {
+	    position: relative;
+	}
+	#alert:hover:after {
+	    background: hsla(0,0%,0%,.8);
+	    border-radius: 3px;
+	    color: #f6f6f6;
+	    content: 'Click to dismiss';
+	    font: 12px/30px sans-serif;
+	    height: 30px;
+	    left: 50%;
+	    margin-left: -60px;
+			margin-top: -56px;
+	    position: absolute;
+	    text-align: center;
+	    top: 50px;
+	    width: 120px;
+	}
+	#alert:hover:before {
+	    border-bottom: 10px solid hsla(0,0%,0%,.8);
+	    border-left: 10px solid transparent;
+	    border-right: 10px solid transparent;
+	    content: '';
+	    height: 0;
+	    left: 50%;
+	    margin-left: -10px;
+			margin-top: -56px;
+	    position: absolute;
+	    top: 40px;
+	    width: 0;
+	}
+	#alert:target {
+	    display: none;
+	}
+	.alert {
+	    background-color: #c4453c;
+	    background-image: -webkit-linear-gradient(135deg, transparent,
+	                      transparent 25%, hsla(0,0%,0%,.05) 25%,
+	                      hsla(0,0%,0%,.05) 50%, transparent 50%,
+	                      transparent 75%, hsla(0,0%,0%,.05) 75%,
+	                      hsla(0,0%,0%,.05));
+	    background-image: -moz-linear-gradient(135deg, transparent,
+	                      transparent 25%, hsla(0,0%,0%,.1) 25%,
+	                      hsla(0,0%,0%,.1) 50%, transparent 50%,
+	                      transparent 75%, hsla(0,0%,0%,.1) 75%,
+	                      hsla(0,0%,0%,.1));
+	    background-image: -ms-linear-gradient(135deg, transparent,
+	                      transparent 25%, hsla(0,0%,0%,.1) 25%,
+	                      hsla(0,0%,0%,.1) 50%, transparent 50%,
+	                      transparent 75%, hsla(0,0%,0%,.1) 75%,
+	                      hsla(0,0%,0%,.1));
+	    background-image: -o-linear-gradient(135deg, transparent,
+	                      transparent 25%, hsla(0,0%,0%,.1) 25%,
+	                      hsla(0,0%,0%,.1) 50%, transparent 50%,
+	                      transparent 75%, hsla(0,0%,0%,.1) 75%,
+	                      hsla(0,0%,0%,.1));
+	    background-image: linear-gradient(135deg, transparent,
+	                      transparent 25%, hsla(0,0%,0%,.1) 25%,
+	                      hsla(0,0%,0%,.1) 50%, transparent 50%,
+	                      transparent 75%, hsla(0,0%,0%,.1) 75%,
+	                      hsla(0,0%,0%,.1));
+	    background-size: 20px 20px;
+	    box-shadow: 0 5px 0 hsla(0,0%,0%,.1);
+	    color: #f6f6f6;
+	    display: block;
+	    font: bold 16px/40px sans-serif;
+	    height: 40px;
+			margin-top: -90px;
+	    position: absolute;
+	    text-align: center;
+	    text-decoration: none;
+	    top: -45px;
+	    width: 96%;
+	    -webkit-animation: alert 1s ease forwards;
+	       -moz-animation: alert 1s ease forwards;
+	        -ms-animation: alert 1s ease forwards;
+	         -o-animation: alert 1s ease forwards;
+	            animation: alert 1s ease forwards;
+	}
+
+	/* Animation */
+
+	@-webkit-keyframes alert {
+	    0% { opacity: 0; }
+	    50% { opacity: 1; }
+	    100% { top: 0; }
+	}
+	@-moz-keyframes alert {
+	    0% { opacity: 0; }
+	    50% { opacity: 1; }
+	    100% { top: 0; }
+	}
+	@-ms-keyframes alert {
+	    0% { opacity: 0; }
+	    50% { opacity: 1; }
+	    100% { top: 0; }
+	}
+	@-o-keyframes alert {
+	    0% { opacity: 0; }
+	    50% { opacity: 1; }
+	    100% { top: 0; }
+	}
+	@keyframes alert {
+	    0% { opacity: 0; }
+	    50% { opacity: 1; }
+	    100% { top: 0; }
+	}
+
 	h2 {
 		color: rgba(53,60,88, 0.4);
 		margin: 0 0 18px 0;
@@ -64,11 +173,13 @@
 		padding-right: 5px;
 	}
 	</style>
-	<base target="_blank"> <!-- Opens all links in a new window -->
 </head>
 <body>
 <div style="display:flex; justify-content:center; align-items:center;">
   <div class="wrapper">
+		<div id="alert">
+    <a class="alert" href="#alert">New address! Please update your bookmark. New URL: https://dmillson-sim.github.io/sim-post-start/</a>
+    </div>
     <h2>EXPRESS DAILIES</h2>
     <ul>
       <a href="http://localhost/index.php?sort=nameAsc"><li><i class="fa fa-lg fa-server " aria-hidden="true"></i> ExD Projects</li></a>
