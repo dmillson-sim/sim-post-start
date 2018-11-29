@@ -1,4 +1,3 @@
-![Image of Startpage](https://blazstyn.github.io/bling-start/back/preview.png)
 ## Sim Post start
 This page serves as a launcher for Sim Post internal services, loaded by the web browser whenever technicians need to access it. The start-page includes links to client services, Sim services, and useful tools that are accessed frequently during shift work or configuration.
 
@@ -10,4 +9,5 @@ Pretty simple code here, easy to follow.
 * [fontawesome](http://fontawesome.io/) and [icomoon](https://icomoon.io/) used for vector icons
 * ~ that's about it!
 
-_blazstyn
+Don't work too hard.
+_dan
