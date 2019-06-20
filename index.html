@@ -23,13 +23,13 @@
 	body {
 		font-family: 'Lato', sans-serif;
 		font-weight: 700;
-		color: #333;
+		color: rgba(53,60,88, 1);
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		background-image: linear-gradient(90deg, rgba(226,247,247,.2), rgba(55,191,141,.6)), url('back/back2.png');
+		background-image: linear-gradient(40deg, rgba(215, 66, 244, .9), rgba(55,191,141,.7)), url('back/back1.jpg');
 		background-repeat: no-repeat;
-    		background-attachment: fixed;
+    	background-attachment: fixed;
 		background-size: cover; */ /* To display wallpaper at full screen size */
 	}
 
@@ -45,30 +45,18 @@
 	    height: 30px;
 	    left: 50%;
 	    margin-left: -60px;
-			margin-top: -56px;
+			margin-top: -86px;
 	    position: absolute;
 	    text-align: center;
 	    top: 50px;
 	    width: 120px;
 	}
-	#alert:hover:before {
-	    border-bottom: 10px solid hsla(0,0%,0%,.8);
-	    border-left: 10px solid transparent;
-	    border-right: 10px solid transparent;
-	    content: '';
-	    height: 0;
-	    left: 50%;
-	    margin-left: -10px;
-			margin-top: -56px;
-	    position: absolute;
-	    top: 40px;
-	    width: 0;
-	}
+
 	#alert:target {
 	    display: none;
 	}
 	.alert {
-	    background-color: #c4453c;
+	    background-color: #e88206;
 	    background-image: -webkit-linear-gradient(135deg, transparent,
 	                      transparent 25%, hsla(0,0%,0%,.05) 25%,
 	                      hsla(0,0%,0%,.05) 50%, transparent 50%,
@@ -95,22 +83,23 @@
 	                      transparent 75%, hsla(0,0%,0%,.1) 75%,
 	                      hsla(0,0%,0%,.1));
 	    background-size: 20px 20px;
-	    box-shadow: 0 5px 0 hsla(0,0%,0%,.1);
+	    box-shadow: 0 0 4px hsla(0,0%,0%,.3);
 	    color: #f6f6f6;
 	    display: block;
 	    font: bold 16px/40px sans-serif;
+	    font-weight: 800;
 	    height: 40px;
-			margin-top: -90px;
+			margin-top: -100px;
 	    position: absolute;
 	    text-align: center;
 	    text-decoration: none;
 	    top: -45px;
 	    width: 96%;
-	    -webkit-animation: alert 1s ease forwards;
-	       -moz-animation: alert 1s ease forwards;
-	        -ms-animation: alert 1s ease forwards;
-	         -o-animation: alert 1s ease forwards;
-	            animation: alert 1s ease forwards;
+	    -webkit-animation: alert 2s ease forwards;
+	       -moz-animation: alert 2s ease forwards;
+	        -ms-animation: alert 2s ease forwards;
+	         -o-animation: alert 2s ease forwards;
+	            animation: alert 2s ease forwards;
 	}
 
 	/* Animation */
@@ -142,7 +131,7 @@
 	}
 
 	h2 {
-		color: rgba(53,60,88, 0.4);
+		color: rgba(53,60,88, 0.6);
 		margin: 0 0 18px 0;
 		font-style: italic;
 		font-size: 2em;
@@ -178,34 +167,28 @@
 <div style="display:flex; justify-content:center; align-items:center;">
   <div class="wrapper">
 		<div id="alert">
-<!--	<a class="alert" href="#alert">New address! Please update your bookmark. New URL: https://dmillson-sim.github.io/sim-post-start/</a> -->
+		<!--<a class="alert" href="#alert">Did you know, that rabbits like licorice?</a>-->
     </div>
-    <h2>EXPRESS DAILIES</h2>
+    <br>
+    <h2>LOCAL DAILIES</h2>
     <ul>
       <a href="http://localhost/index.php?sort=nameAsc"><li><i class="fa fa-lg fa-server" aria-hidden="true"></i> ExD Projects</li></a>
       <a href="http://localhost/phpmyadmin/"><li><i class="fa fa-lg fa-stack-overflow" aria-hidden="true"></i> PhpMyAdmin</li></a>
       <a href="http://localhost/render/"><li><i class="fa fa-lg icon-rocket" aria-hidden="true"></i> RenderQueue</li></a>
-      <a href="https://www.metabanq.com/"><li><i class="fa fa-lg fa-cubes" aria-hidden="true"></i> Metabanq</li></a>
-      <a href="https://app.getguru.com"><li><i class="fa fa-lg fa-question-circle" aria-hidden="true"></i> Guru</li></a>
     </ul>
     <h2>QUICK LINKS</h2>
     <ul>
-      <a href="https://dmillson-sim.github.io/sim-post-start/re-directory.html"><li><i class="fa fa-lg fa-address-book" aria-hidden="true"></i> Directory</li></a>
-      <a href="https://sim.my.centrify.com/"><li><i class="fa fa-lg fa-id-card " aria-hidden="true"></i> SimSSO</li></a>
-      <a href="https://mail.siminternational.com/owa/"><li><i class="fa fa-lg fa-envelope" aria-hidden="true"></i> Outlook</li></a>
+      <a href="https://sim.my.centrify.com/"><li><i class="fa fa-lg fa-id-card " aria-hidden="true"></i> idaptive SSO</li></a>
+      <a href="https://outlook.office365.com/mail/"><li><i class="fa fa-lg fa-envelope" aria-hidden="true"></i> Outlook</li></a>
       <a href="https://app.asana.com/"><li><i class="fa fa-lg icon-Asana" aria-hidden="true"></i> Asana</li></a>
-    </ul>
-	  <br>
-    <ul>
-      <a href="https://drive.google.com/drive/u/0/starred"><li><i class="fa fa-lg icon-google-drive" aria-hidden="true"></i> Drive</li></a>
-      <a href="https://dmillson-sim.github.io/sim-post-start/re-slack.html"><li><i class="fa fa-lg fa-slack" aria-hidden="true"></i> Slack</li></a>
       <a href="https://global.gotomeeting.com/"><li><i class="fa fa-lg fa-whatsapp" aria-hidden="true"></i> GoToMeeting</li></a>
-      <a href="https://www.tomsplanner.com/?template=new"><li><i class="fa fa-sort-amount-desc" aria-hidden="true"></i> Tom's Planner</li></a>
+      <a href="https://app.getguru.com"><li><i class="fa fa-lg fa-question-circle" aria-hidden="true"></i> Guru</li></a>
     </ul>
 	  <br>
     <ul>
-      <a href="https://shares1.nbcunistudiopost.com/login"><li><i class="fa fa-lg fa-adn" aria-hidden="true"></i> USP Shares1</li></a>
-      <a href="https://mediamonorail.disney.com/"><li><i class="fa fa-lg fa-medium" aria-hidden="true"></i> MediaMonorail</li></a>
+      <a href="https://simdig-my.sharepoint.com/"><li><i class="fa fa-lg fa-cloud-upload" aria-hidden="true"></i> OneDrive</li></a>
+      <a href="https://drive.google.com/drive/u/0/starred"><li><i class="fa fa-lg icon-google-drive" aria-hidden="true"></i> gDrive</li></a>
+      <a href="https://www.tomsplanner.com/?template=new"><li><i class="fa fa-sort-amount-desc" aria-hidden="true"></i> Tom's Planner</li></a>
       <a href="https://www.oneclear.com/BC/Product/Modules/SignIn.aspx"><li><i class="fa fa-lg fa-sellsy" aria-hidden="true"></i> DAX OneClear</li></a>
       <a href="https://project.pixsystem.com/"><li><i class="fa fa-lg fa-th-list" aria-hidden="true"></i> PIX</li></a>
     </ul>
@@ -214,15 +197,16 @@
       <a href="https://techinternets.com/copy_calc"><li><i class="fa fa-lg fa-bar-chart" aria-hidden="true"></i> Transfer Time Calculator</li></a>
       <a href="http://current360.com/apps/timecode-calculator/tc.html"><li><i class="fa fa-lg icon-film" aria-hidden="true"></i> Timecode Calculator</li></a>
       <a href="https://www.digitalrebellion.com/webapps/videocalc"><li><i class="fa fa-lg fa-hdd-o" aria-hidden="true"></i> Data Rates</li></a>
-      <a href="https://contenthub.netflix.com/"><li><i class="fa fa-lg fa-plug" aria-hidden="true"></i> ContentHub</li></a>
+      <a href="https://www.metabanq.com/"><li><i class="fa fa-lg fa-cubes" aria-hidden="true"></i> Metabanq</li></a>
     </ul>
 	  <br>
     <ul>
       <a href="https://my.splashtop.com/login"><li><i class="fa fa-lg icon-Splashtop" aria-hidden="true"></i> SplashTop</li></a>
       <a href="https://login.teamviewer.com/LogOn"><li><i class="fa fa-lg icon-Teamviewer" aria-hidden="true"></i> TeamViewer</li></a>
       <a href="http://beta.speedtest.net/"><li><i class="fa fa-lg fa-tachometer" aria-hidden="true"></i> SpeedTest</li></a>
+      <a href="https://contenthub.netflix.com/"><li><i class="fa fa-lg fa-plug" aria-hidden="true"></i> ContentHub</li></a>
     </ul>
-    <h2>SIM SERVICES</h2>
+    <h2>PORTALS</h2>
     <ul>
       <a href="https://simatl-chatt.mediashuttle.com/"><li><i class="fa fa-lg icon-drive" aria-hidden="true"></i> Atlanta:Share</li></a>
       <a href="https://simla-laspalmas.mediashuttle.com/"><li><i class="fa fa-lg icon-drive" aria-hidden="true"></i> LA:Share</li></a>
