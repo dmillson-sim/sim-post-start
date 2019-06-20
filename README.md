@@ -4,7 +4,7 @@ This page serves as a launcher for Sim Post internal services, loaded by the web
 Based on the original concept by [jnsltk](https://github.com/jnsltk/startpages): 'toosimple'.
 
 ### Code
-Pretty simple code here, easy to follow.
+I've absolutely butchered what was some very tidy code.
 * css is (for the most part) included in index.html
 * [fontawesome](http://fontawesome.io/) and [icomoon](https://icomoon.io/) used for vector icons
 * ~ that's about it!
