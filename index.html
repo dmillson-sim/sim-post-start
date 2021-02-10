@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="favico.png" type="image/png">
 	<title>Sim Post: Start</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, minimum-scale=1.0">
@@ -56,7 +56,7 @@
 	    display: none;
 	}
 	.alert {
-	    background-color: #e88206;
+	    background-color: #c77005;
 	    background-image: -webkit-linear-gradient(135deg, transparent,
 	                      transparent 25%, hsla(0,0%,0%,.05) 25%,
 	                      hsla(0,0%,0%,.05) 50%, transparent 50%,
@@ -82,24 +82,25 @@
 	                      hsla(0,0%,0%,.1) 50%, transparent 50%,
 	                      transparent 75%, hsla(0,0%,0%,.1) 75%,
 	                      hsla(0,0%,0%,.1));
-	    background-size: 20px 20px;
+	    background-size: 40px 40px;
 	    box-shadow: 0 0 4px hsla(0,0%,0%,.3);
 	    color: #f6f6f6;
 	    display: block;
-	    font: bold 16px/40px sans-serif;
-	    font-weight: 800;
-	    height: 40px;
-			margin-top: -100px;
+	    font: 18px/32px sans-serif;
+	    	letter-spacing: 0.15em;
+	    font-weight: 500;
+	    height: 30px;
+			margin-top: -80px;
 	    position: absolute;
 	    text-align: center;
 	    text-decoration: none;
-	    top: -45px;
+	    top: -250px;
 	    width: 96%;
-	    -webkit-animation: alert 2s ease forwards;
-	       -moz-animation: alert 2s ease forwards;
-	        -ms-animation: alert 2s ease forwards;
-	         -o-animation: alert 2s ease forwards;
-	            animation: alert 2s ease forwards;
+	    -webkit-animation: alert 3s ease forwards;
+	       -moz-animation: alert 3s ease forwards;
+	        -ms-animation: alert 3s ease forwards;
+	         -o-animation: alert 3s ease forwards;
+	            animation: alert 3s ease forwards;
 	}
 
 	/* Animation */
@@ -131,11 +132,19 @@
 	}
 
 	h2 {
-		color: rgba(53,60,88, 0.6);
+		color: rgba(67, 76, 112, 0.8);
 		margin: 0 0 18px 0;
 		font-style: italic;
 		font-size: 2em;
 	}
+
+	h3 {
+		margin: 25px 0 18px 0;
+		font-size: .9em;
+		letter-spacing: 0.15em;
+		text-align: center;
+	}
+
 	ul {
 		list-style: none;
 		margin: 0;
@@ -149,14 +158,23 @@
 		margin: 0 0 20px 0;
 	}
 	a {
-		color: #353C58;
+		color: #262b40;
 		text-decoration: none;
 		padding: 20px;
 	}
 	a:hover {
-		color: #D2E7DC;
-		background: #353C58;
-		transition: .1s;
+		color: #bfc4d9;
+		background: #4d5780;
+		transition: .15s;
+	}
+	a.www {
+		padding: 10px;
+		color: rgba(29, 33, 48, 0.4);
+	}
+	a.www:hover {
+		color: #bfc4d9;
+		background: rgba(29, 33, 48, 0.8);
+		transition: 3s;
 	}
 	i {
 		padding-right: 5px;
@@ -220,6 +238,7 @@
       &nbsp;&nbsp;&nbsp;<a href="https://simto-atlantic-send.mediashuttle.com/"><li><i class="fa fa-lg fa-arrow-circle-up" aria-hidden="true"></i> Toronto:Send</li></a>
       &nbsp;&nbsp;&nbsp;<a href="https://simvan-clark-send.mediashuttle.com/"><li><i class="fa fa-lg fa-arrow-circle-up" aria-hidden="true"></i> Vancouver:Send</li></a>
     </ul>
+    <h3><a class="www" href="https://m2imedia.tv">maintained by dan millson</a></h3>
   </div>
 </div>
 </body>
